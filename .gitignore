@@ -1,0 +1,31 @@
+# ignore backups and source images
+artwork/sources/*
+backups/*
+gallery/*
+photos/*
+raws/*
+snippets/*
+
+# ignore posted talks
+html/school/*
+html/talks/*
+html/rapid/*
+
+# ignore map data
+*.cpg
+*.dbf
+*.prj
+*.qpj
+*.shp
+*.shx
+
+# ignore spreadsheets
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.numbers
+
+# ignore custom icon
+Icon?
+
