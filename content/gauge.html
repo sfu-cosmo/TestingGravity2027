@@ -1,9 +1,9 @@
 <div>
 <canvas id="myCanvas" width="720" height="720"></canvas>
 <script>
-var start = new Date('August 1, 2026 00:00:00');
-var early = new Date('December 7, 2026 22:00:00');
-var close = new Date('January 25, 2027 22:00:00');
+var start = new Date('July 31, 2026 00:00:00');
+var early = new Date('November 30, 2026 22:00:00');
+var close = new Date('January 22, 2027 22:00:00');
 var today = new Date();
 
 var latefee = Math.min(Math.max(0.0, (early.getTime()-start.getTime()) / (close.getTime()-start.getTime() + 0.0)), 1.0)
