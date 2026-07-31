@@ -17,10 +17,14 @@ Text blocks that go into layout template. Content should be edited here, *not in
 
 #### Index by the scene
 
-- `Welcome`: `blurb.html`, `speakers.html`, `organizers.html`
-- `Register`: `fees.html`, `gauge.html`
-- `Participants`: `../participants/participants.html`
-- `Program`: `../program/program.html`
-- `Travel Info`: `travel.html`, `directions.html`, `venue.html`, `hotels.html`
-- `Local Info`: `local.html`
-- `Conduct`: `conduct.html`
+- ***`Welcome`***: `blurb.html`, `speakers.html`, `organizers.html`
+- ***`Register`***: `fees.html`, `gauge.html`
+- ***`Participants`***: `../participants/participants.html`
+- ***`Program`***: `../program/program.html`
+- ***`Travel Info`***: `travel.html`, `directions.html`, `venue.html`, `hotels.html`
+- ***`Local Info`***: `local.html`
+- ***`Conduct`***: `conduct.html`
+
+#### Head HTML styling
+
+- `head.html`  -  global CSS and Javascript styling, leave it alone

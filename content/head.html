@@ -1,0 +1,59 @@
+<!-- override disabled text selection -->
+<style>
+.HYPE_element {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+}
+</style>
+
+<script>
+document.addEventListener("pointerdown", function(e) {
+    const el = e.target.closest(".HYPE_element");
+
+    if (el && el.innerText && el.innerText.trim()) {
+        e.stopImmediatePropagation();
+    }
+}, true);
+
+document.addEventListener("mousedown", function(e) {
+    const el = e.target.closest(".HYPE_element");
+
+    if (el && el.innerText && el.innerText.trim()) {
+        e.stopImmediatePropagation();
+    }
+}, true);
+</script>
+
+<!-- fit printed output on letter page -->
+<style>
+@media print {
+    @page {
+        size: Letter portrait;
+        margin: -0.5in;
+        margin-top: 0.0in;
+    }
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 8.5in !important;
+        max-width: 8.5in !important;
+    }
+
+    body {
+        padding-top: 0.25in !important;
+    }
+
+    div[id$="_hype_container"] {
+        width: 8.5in !important;
+        max-width: 8.5in !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .HYPE_document,
+    .HYPE_scene {
+        overflow: visible !important;
+    }
+}
+</style>
